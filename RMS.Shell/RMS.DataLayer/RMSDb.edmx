@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="erp_hotelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="DeleteBilling" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteBranch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="branchId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteCustomer_attributes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteCustomers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteDeleteOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteDeletePriority_level" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteMenu_category" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="categoryId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteMenu_gallery" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteMenu_items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="itemID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteMenu_price" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteOrders_tables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="orderId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteSequence_table" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteSpecial_offers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteStock" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteTable_reservations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteTableDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tableno" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteUser_permissions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteUser_role" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="roleID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeleteUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetAllBillings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllBranches" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllCustomer_attributes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllCustomers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllMenu_categories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllMenu_galleries" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllMenu_items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllMenu_prices" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllMenus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllPriority_levels" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllSequence_tables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllSpecial_offers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllStocks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllTable_reservations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllUser_permissions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetAllUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="ManageMenuDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="menuCode" Type="varchar" Mode="In" />
+          <Parameter Name="menuTitle" Type="varchar(max)" Mode="In" />
+          <Parameter Name="status" Type="smallint" Mode="In" />
+          <Parameter Name="ratings" Type="float" Mode="In" />
+          <Parameter Name="remarks" Type="varchar" Mode="In" />
+          <Parameter Name="menuCategoryId" Type="varchar" Mode="In" />
+          <Parameter Name="branchCode" Type="varchar" Mode="In" />
+          <Parameter Name="IsDeleted" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="sp_Branch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="branchCode" Type="varchar" Mode="In" />
+          <Parameter Name="branchName" Type="varchar" Mode="In" />
+          <Parameter Name="town" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_CustomerAttributes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="customerAttribute" Type="varchar" Mode="In" />
+          <Parameter Name="customerValue" Type="varchar" Mode="In" />
+          <Parameter Name="customerId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_Customers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="customerID" Type="varchar" Mode="In" />
+          <Parameter Name="remarks" Type="varchar" Mode="In" />
+          <Parameter Name="status" Type="smallint" Mode="In" />
+        </Function>
+        <Function Name="sp_menuCategories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="categoryId" Type="varchar" Mode="In" />
+          <Parameter Name="categoryName" Type="varchar" Mode="In" />
+          <Parameter Name="isMain" Type="smallint" Mode="In" />
+          <Parameter Name="parentCategory" Type="varchar" Mode="In" />
+          <Parameter Name="seq_no" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="erp_hotelModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="erp_hotelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="erp_hotelEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="DeleteBilling">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteBranch">
+            <Parameter Name="branchId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteCustomer_attributes">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteCustomers">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteDeleteOrders">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteDeletePriority_level">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteMenu">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteMenu_category">
+            <Parameter Name="categoryId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteMenu_gallery">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteMenu_items">
+            <Parameter Name="itemID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteMenu_price">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteOrders_tables">
+            <Parameter Name="orderId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteSequence_table">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteSpecial_offers">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteStock">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteTable_reservations">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteTableDetails">
+            <Parameter Name="tableno" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteUser_permissions">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteUser_role">
+            <Parameter Name="roleID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DeleteUsers">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetAllBillings" ReturnType="Collection(erp_hotelModel.GetAllBillings_Result)" />
+          <FunctionImport Name="GetAllBranches" ReturnType="Collection(erp_hotelModel.GetAllBranches_Result)" />
+          <FunctionImport Name="GetAllCustomer_attributes" ReturnType="Collection(erp_hotelModel.GetAllCustomer_attributes_Result)" />
+          <FunctionImport Name="GetAllCustomers" ReturnType="Collection(erp_hotelModel.GetAllCustomers_Result)" />
+          <FunctionImport Name="GetAllMenu_categories" ReturnType="Collection(erp_hotelModel.GetAllMenu_categories_Result)" />
+          <FunctionImport Name="GetAllMenu_galleries" ReturnType="Collection(erp_hotelModel.GetAllMenu_galleries_Result)" />
+          <FunctionImport Name="GetAllMenu_items" ReturnType="Collection(erp_hotelModel.GetAllMenu_items_Result)" />
+          <FunctionImport Name="GetAllMenu_prices" ReturnType="Collection(erp_hotelModel.GetAllMenu_prices_Result)" />
+          <FunctionImport Name="GetAllMenus" ReturnType="Collection(erp_hotelModel.GetAllMenus_Result)" />
+          <FunctionImport Name="GetAllOrders" ReturnType="Collection(erp_hotelModel.GetAllOrders_Result)" />
+          <FunctionImport Name="GetAllPriority_levels" ReturnType="Collection(erp_hotelModel.GetAllPriority_levels_Result)" />
+          <FunctionImport Name="GetAllSequence_tables" ReturnType="Collection(erp_hotelModel.GetAllSequence_tables_Result)" />
+          <FunctionImport Name="GetAllSpecial_offers" ReturnType="Collection(erp_hotelModel.GetAllSpecial_offers_Result)" />
+          <FunctionImport Name="GetAllStocks" ReturnType="Collection(erp_hotelModel.GetAllStocks_Result)" />
+          <FunctionImport Name="GetAllTable_reservations" ReturnType="Collection(erp_hotelModel.GetAllTable_reservations_Result)" />
+          <FunctionImport Name="GetAllTables" ReturnType="Collection(erp_hotelModel.GetAllTables_Result)" />
+          <FunctionImport Name="GetAllUser_permissions" ReturnType="Collection(erp_hotelModel.GetAllUser_permissions_Result)" />
+          <FunctionImport Name="GetAllUsers" ReturnType="Collection(erp_hotelModel.GetAllUsers_Result)" />
+          <FunctionImport Name="ManageMenuDetails">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="menuCode" Mode="In" Type="String" />
+            <Parameter Name="menuTitle" Mode="In" Type="String" />
+            <Parameter Name="status" Mode="In" Type="Int16" />
+            <Parameter Name="ratings" Mode="In" Type="Double" />
+            <Parameter Name="remarks" Mode="In" Type="String" />
+            <Parameter Name="menuCategoryId" Mode="In" Type="String" />
+            <Parameter Name="branchCode" Mode="In" Type="String" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="sp_Branch">
+            <Parameter Name="branchCode" Mode="In" Type="String" />
+            <Parameter Name="branchName" Mode="In" Type="String" />
+            <Parameter Name="town" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_CustomerAttributes">
+            <Parameter Name="customerAttribute" Mode="In" Type="String" />
+            <Parameter Name="customerValue" Mode="In" Type="String" />
+            <Parameter Name="customerId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_Customers">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="customerID" Mode="In" Type="String" />
+            <Parameter Name="remarks" Mode="In" Type="String" />
+            <Parameter Name="status" Mode="In" Type="Int16" />
+          </FunctionImport>
+          <FunctionImport Name="sp_menuCategories">
+            <Parameter Name="categoryId" Mode="In" Type="String" />
+            <Parameter Name="categoryName" Mode="In" Type="String" />
+            <Parameter Name="isMain" Mode="In" Type="Int16" />
+            <Parameter Name="parentCategory" Mode="In" Type="String" />
+            <Parameter Name="seq_no" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="GetAllBillings_Result">
+          <Property Type="String" Name="billNo" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="issuedDatetime" Nullable="true" />
+          <Property Type="String" Name="paymentType" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="orderId" Nullable="true" />
+          <Property Type="Int32" Name="customerId" Nullable="true" />
+          <Property Type="Int32" Name="issuedBy" Nullable="true" />
+          <Property Type="Double" Name="totalAmount" Nullable="true" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllBranches_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="branchCode" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="branchName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="town" Nullable="true" MaxLength="100" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllCustomer_attributes_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="customerAttribute" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="customerValue" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="customerId" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllCustomers_Result">
+          <Property Type="String" Name="customerId" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="remarks" Nullable="true" MaxLength="500" />
+          <Property Type="Int16" Name="status" Nullable="true" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllMenu_categories_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="categoryId" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="categoryName" Nullable="true" MaxLength="200" />
+          <Property Type="Int16" Name="isMain" Nullable="true" />
+          <Property Type="Int32" Name="parentCategory" Nullable="true" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllMenu_galleries_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="imageUrl" Nullable="true" MaxLength="45" />
+          <Property Type="Int16" Name="featuredImage" Nullable="true" />
+          <Property Type="Int32" Name="menuCode" Nullable="true" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllMenu_items_Result">
+          <Property Type="Int32" Name="itemID" Nullable="false" />
+          <Property Type="String" Name="itemName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="itemValue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="menuCode" Nullable="true" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllMenu_prices_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Double" Name="portionPrice" Nullable="true" />
+          <Property Type="String" Name="portionType" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="menuCode" Nullable="true" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllMenus_Result">
+          <Property Type="String" Name="menuCode" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="menuTitle" Nullable="true" />
+          <Property Type="Int16" Name="status" Nullable="true" />
+          <Property Type="Double" Name="ratings" Nullable="true" />
+          <Property Type="String" Name="remarks" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="menuCategoryId" Nullable="true" />
+          <Property Type="Int32" Name="branchCode" Nullable="true" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllOrders_Result">
+          <Property Type="String" Name="orderId" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="orderedTime" Nullable="true" />
+          <Property Type="String" Name="orderStatus" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="orderPrice" Nullable="true" />
+          <Property Type="String" Name="remarks" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="userID" Nullable="true" />
+          <Property Type="Int32" Name="prioritLevel" Nullable="false" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllPriority_levels_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="priorityLevel" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="priorityScore" Nullable="true" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllSequence_tables_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="tableName" Nullable="true" MaxLength="45" />
+          <Property Type="String" Name="seqFormat" Nullable="true" MaxLength="100" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllSpecial_offers_Result">
+          <Property Type="String" Name="offer_code" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="offerTitle" Nullable="true" MaxLength="200" />
+          <Property Type="DateTime" Name="offerStart" Nullable="true" />
+          <Property Type="DateTime" Name="offerEnd" Nullable="true" />
+          <Property Type="String" Name="offerDescription" Nullable="true" MaxLength="45" />
+          <Property Type="Int32" Name="menuCode" Nullable="true" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllStocks_Result">
+          <Property Type="String" Name="item_code" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="itemName" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="qtyAvailable" Nullable="true" />
+          <Property Type="String" Name="unitCode" Nullable="true" MaxLength="45" />
+          <Property Type="DateTime" Name="lastUpdated" Nullable="true" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllTable_reservations_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="reservedBy" Nullable="true" MaxLength="45" />
+          <Property Type="String" Name="contactNo" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="numberOfPeoples" Nullable="true" />
+          <Property Type="DateTime" Name="datetimeFrom" Nullable="true" />
+          <Property Type="DateTime" Name="datetimeTo" Nullable="true" />
+          <Property Type="Int32" Name="tableNo" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllTables_Result">
+          <Property Type="Int32" Name="tableno" Nullable="false" />
+          <Property Type="String" Name="tableCode" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="located" Nullable="true" MaxLength="200" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllUser_permissions_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="module" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="userRoleID" Nullable="false" MaxLength="100" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetAllUsers_Result">
+          <Property Type="String" Name="userID" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="firstName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="lastName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="userName" Nullable="true" MaxLength="100" />
+          <Property Type="Int16" Name="status" Nullable="true" />
+          <Property Type="String" Name="profilePicture" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="userRoleID" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="branchCode" Nullable="true" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Boolean" Name="isDelete" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="erp_hotelModelStoreContainer" CdmEntityContainer="erp_hotelEntities" >
+          <FunctionImportMapping FunctionImportName="DeleteBilling" FunctionName="erp_hotelModel.Store.DeleteBilling" />
+          <FunctionImportMapping FunctionImportName="DeleteBranch" FunctionName="erp_hotelModel.Store.DeleteBranch" />
+          <FunctionImportMapping FunctionImportName="DeleteCustomer_attributes" FunctionName="erp_hotelModel.Store.DeleteCustomer_attributes" />
+          <FunctionImportMapping FunctionImportName="DeleteCustomers" FunctionName="erp_hotelModel.Store.DeleteCustomers" />
+          <FunctionImportMapping FunctionImportName="DeleteDeleteOrders" FunctionName="erp_hotelModel.Store.DeleteDeleteOrders" />
+          <FunctionImportMapping FunctionImportName="DeleteDeletePriority_level" FunctionName="erp_hotelModel.Store.DeleteDeletePriority_level" />
+          <FunctionImportMapping FunctionImportName="DeleteMenu" FunctionName="erp_hotelModel.Store.DeleteMenu" />
+          <FunctionImportMapping FunctionImportName="DeleteMenu_category" FunctionName="erp_hotelModel.Store.DeleteMenu_category" />
+          <FunctionImportMapping FunctionImportName="DeleteMenu_gallery" FunctionName="erp_hotelModel.Store.DeleteMenu_gallery" />
+          <FunctionImportMapping FunctionImportName="DeleteMenu_items" FunctionName="erp_hotelModel.Store.DeleteMenu_items" />
+          <FunctionImportMapping FunctionImportName="DeleteMenu_price" FunctionName="erp_hotelModel.Store.DeleteMenu_price" />
+          <FunctionImportMapping FunctionImportName="DeleteOrders_tables" FunctionName="erp_hotelModel.Store.DeleteOrders_tables" />
+          <FunctionImportMapping FunctionImportName="DeleteSequence_table" FunctionName="erp_hotelModel.Store.DeleteSequence_table" />
+          <FunctionImportMapping FunctionImportName="DeleteSpecial_offers" FunctionName="erp_hotelModel.Store.DeleteSpecial_offers" />
+          <FunctionImportMapping FunctionImportName="DeleteStock" FunctionName="erp_hotelModel.Store.DeleteStock" />
+          <FunctionImportMapping FunctionImportName="DeleteTable_reservations" FunctionName="erp_hotelModel.Store.DeleteTable_reservations" />
+          <FunctionImportMapping FunctionImportName="DeleteTableDetails" FunctionName="erp_hotelModel.Store.DeleteTableDetails" />
+          <FunctionImportMapping FunctionImportName="DeleteUser_permissions" FunctionName="erp_hotelModel.Store.DeleteUser_permissions" />
+          <FunctionImportMapping FunctionImportName="DeleteUser_role" FunctionName="erp_hotelModel.Store.DeleteUser_role" />
+          <FunctionImportMapping FunctionImportName="DeleteUsers" FunctionName="erp_hotelModel.Store.DeleteUsers" />
+          <FunctionImportMapping FunctionImportName="GetAllBillings" FunctionName="erp_hotelModel.Store.GetAllBillings">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllBillings_Result">
+                <ScalarProperty Name="billNo" ColumnName="billNo" />
+                <ScalarProperty Name="issuedDatetime" ColumnName="issuedDatetime" />
+                <ScalarProperty Name="paymentType" ColumnName="paymentType" />
+                <ScalarProperty Name="orderId" ColumnName="orderId" />
+                <ScalarProperty Name="customerId" ColumnName="customerId" />
+                <ScalarProperty Name="issuedBy" ColumnName="issuedBy" />
+                <ScalarProperty Name="totalAmount" ColumnName="totalAmount" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllBranches" FunctionName="erp_hotelModel.Store.GetAllBranches">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllBranches_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="branchCode" ColumnName="branchCode" />
+                <ScalarProperty Name="branchName" ColumnName="branchName" />
+                <ScalarProperty Name="town" ColumnName="town" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllCustomer_attributes" FunctionName="erp_hotelModel.Store.GetAllCustomer_attributes">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllCustomer_attributes_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="customerAttribute" ColumnName="customerAttribute" />
+                <ScalarProperty Name="customerValue" ColumnName="customerValue" />
+                <ScalarProperty Name="customerId" ColumnName="customerId" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllCustomers" FunctionName="erp_hotelModel.Store.GetAllCustomers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllCustomers_Result">
+                <ScalarProperty Name="customerId" ColumnName="customerId" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllMenu_categories" FunctionName="erp_hotelModel.Store.GetAllMenu_categories">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllMenu_categories_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+                <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+                <ScalarProperty Name="isMain" ColumnName="isMain" />
+                <ScalarProperty Name="parentCategory" ColumnName="parentCategory" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllMenu_galleries" FunctionName="erp_hotelModel.Store.GetAllMenu_galleries">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllMenu_galleries_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="imageUrl" ColumnName="imageUrl" />
+                <ScalarProperty Name="featuredImage" ColumnName="featuredImage" />
+                <ScalarProperty Name="menuCode" ColumnName="menuCode" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllMenu_items" FunctionName="erp_hotelModel.Store.GetAllMenu_items">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllMenu_items_Result">
+                <ScalarProperty Name="itemID" ColumnName="itemID" />
+                <ScalarProperty Name="itemName" ColumnName="itemName" />
+                <ScalarProperty Name="itemValue" ColumnName="itemValue" />
+                <ScalarProperty Name="menuCode" ColumnName="menuCode" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllMenu_prices" FunctionName="erp_hotelModel.Store.GetAllMenu_prices">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllMenu_prices_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="portionPrice" ColumnName="portionPrice" />
+                <ScalarProperty Name="portionType" ColumnName="portionType" />
+                <ScalarProperty Name="menuCode" ColumnName="menuCode" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllMenus" FunctionName="erp_hotelModel.Store.GetAllMenus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllMenus_Result">
+                <ScalarProperty Name="menuCode" ColumnName="menuCode" />
+                <ScalarProperty Name="menuTitle" ColumnName="menuTitle" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="ratings" ColumnName="ratings" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="menuCategoryId" ColumnName="menuCategoryId" />
+                <ScalarProperty Name="branchCode" ColumnName="branchCode" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllOrders" FunctionName="erp_hotelModel.Store.GetAllOrders">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllOrders_Result">
+                <ScalarProperty Name="orderId" ColumnName="orderId" />
+                <ScalarProperty Name="orderedTime" ColumnName="orderedTime" />
+                <ScalarProperty Name="orderStatus" ColumnName="orderStatus" />
+                <ScalarProperty Name="orderPrice" ColumnName="orderPrice" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="prioritLevel" ColumnName="prioritLevel" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllPriority_levels" FunctionName="erp_hotelModel.Store.GetAllPriority_levels">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllPriority_levels_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="priorityLevel" ColumnName="priorityLevel" />
+                <ScalarProperty Name="priorityScore" ColumnName="priorityScore" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllSequence_tables" FunctionName="erp_hotelModel.Store.GetAllSequence_tables">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllSequence_tables_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="tableName" ColumnName="tableName" />
+                <ScalarProperty Name="seqFormat" ColumnName="seqFormat" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllSpecial_offers" FunctionName="erp_hotelModel.Store.GetAllSpecial_offers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllSpecial_offers_Result">
+                <ScalarProperty Name="offer_code" ColumnName="offer_code" />
+                <ScalarProperty Name="offerTitle" ColumnName="offerTitle" />
+                <ScalarProperty Name="offerStart" ColumnName="offerStart" />
+                <ScalarProperty Name="offerEnd" ColumnName="offerEnd" />
+                <ScalarProperty Name="offerDescription" ColumnName="offerDescription" />
+                <ScalarProperty Name="menuCode" ColumnName="menuCode" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllStocks" FunctionName="erp_hotelModel.Store.GetAllStocks">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllStocks_Result">
+                <ScalarProperty Name="item_code" ColumnName="item_code" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="itemName" ColumnName="itemName" />
+                <ScalarProperty Name="qtyAvailable" ColumnName="qtyAvailable" />
+                <ScalarProperty Name="unitCode" ColumnName="unitCode" />
+                <ScalarProperty Name="lastUpdated" ColumnName="lastUpdated" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllTable_reservations" FunctionName="erp_hotelModel.Store.GetAllTable_reservations">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllTable_reservations_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="reservedBy" ColumnName="reservedBy" />
+                <ScalarProperty Name="contactNo" ColumnName="contactNo" />
+                <ScalarProperty Name="numberOfPeoples" ColumnName="numberOfPeoples" />
+                <ScalarProperty Name="datetimeFrom" ColumnName="datetimeFrom" />
+                <ScalarProperty Name="datetimeTo" ColumnName="datetimeTo" />
+                <ScalarProperty Name="tableNo" ColumnName="tableNo" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllTables" FunctionName="erp_hotelModel.Store.GetAllTables">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllTables_Result">
+                <ScalarProperty Name="tableno" ColumnName="tableno" />
+                <ScalarProperty Name="tableCode" ColumnName="tableCode" />
+                <ScalarProperty Name="located" ColumnName="located" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllUser_permissions" FunctionName="erp_hotelModel.Store.GetAllUser_permissions">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllUser_permissions_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="module" ColumnName="module" />
+                <ScalarProperty Name="userRoleID" ColumnName="userRoleID" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetAllUsers" FunctionName="erp_hotelModel.Store.GetAllUsers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="erp_hotelModel.GetAllUsers_Result">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="profilePicture" ColumnName="profilePicture" />
+                <ScalarProperty Name="userRoleID" ColumnName="userRoleID" />
+                <ScalarProperty Name="branchCode" ColumnName="branchCode" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="isDelete" ColumnName="isDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ManageMenuDetails" FunctionName="erp_hotelModel.Store.ManageMenuDetails" />
+          <FunctionImportMapping FunctionImportName="sp_Branch" FunctionName="erp_hotelModel.Store.sp_Branch" />
+          <FunctionImportMapping FunctionImportName="sp_CustomerAttributes" FunctionName="erp_hotelModel.Store.sp_CustomerAttributes" />
+          <FunctionImportMapping FunctionImportName="sp_Customers" FunctionName="erp_hotelModel.Store.sp_Customers" />
+          <FunctionImportMapping FunctionImportName="sp_menuCategories" FunctionName="erp_hotelModel.Store.sp_menuCategories" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
